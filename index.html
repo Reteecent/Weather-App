@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App - Static React</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div id="root"></div>
+
+  <!-- Load React -->
+  <script src="react/react.development.js"></script>
+  <script src="react/react-dom.development.js"></script>
+  
+  <!-- Load components -->
+  <script src="components/Header.js"></script>
+  <script src="components/SearchBar.js"></script>
+  <script src="components/WeatherCard.js"></script>
+  <script src="components/CurrentWeather.js"></script>
+  <script src="components/Forecast.js"></script>
+  <script src="components/Footer.js"></script>
+  <script src="components/App.js"></script>
+
+  <!-- Initialize React -->
+  <script>
+    const rootElement = document.getElementById('root');
+    const root = ReactDOM.createRoot(rootElement);
+    root.render(React.createElement(App));
+  </script>
+</body>
+</html>
